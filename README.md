@@ -8,26 +8,24 @@ qverilog fsm_assertions.sv fsm.sv fsm_tb.sv
 ```
 ## Design Overview
 - Moore state machine (output depends only on state)
-- Overlapping sequence detection
+- Overlapping sequence detection 
 - Four states: S0, S1, S2, S3
 
-## Verification Approach
-- Separate assertion module
-- Bind-based SVA (no RTL modification)
-- State transition verification
+## The Verification Approach I followed
+- Separate module for assertion "bind" in testbench. 
+- State transition verification 
 - Output correctness checking
-- Sequence validation using temporal properties
+- Sequence validated using SVA properties
 - Reset-safe properties using `disable iff`
 
 ## Tools Used
 - _QuestaSim_
 - _Vscode_
 
-## Key Learning
+## What I learned
 - Understanding SVA sampling regions
-- Handling `$past` correctly
-- Managing overlapping sequence semantics
-- Bind-based assertion methodology
+- Handling `$past` correctly 
+- How to Bind the assertion module properly
 
 ---
 Thank you for your precious time and patience.
