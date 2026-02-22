@@ -1,0 +1,15 @@
+# Questa / ModelSim
+work/
+transcript
+*.wlf
+*.log
+*.jou
+*.pb
+*.ucdb
+*.vcd
+
+# VS Code
+.vscode/
+
+# Backup
+Backup/
