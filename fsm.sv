@@ -20,7 +20,7 @@ module FSM_101(
             pre_state <= next_state;
     end
 
-    always@(pre_state, din) begin 
+    always_comb @(pre_state, din) begin 
         case(pre_state)
             S0: if(din) begin 
                     next_state = S1;
