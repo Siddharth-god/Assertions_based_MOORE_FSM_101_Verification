@@ -13,7 +13,7 @@ module FSM_101(
 
     logic [1:0] pre_state, next_state;
 
-    always@(posedge clk) begin 
+    always_ff@(posedge clk) begin 
         if(!rstn)
             pre_state <= S0;
         else 
